@@ -4,12 +4,12 @@ def numSelection():
     global num1, num2
     while True:
         try:
-            print('Please select two whole numbers...')
+            print('Please select two natural numbers...')
             num1 = int(input('First number: '))
             num2 = int(input('Second number: '))
             break
         except ValueError:
-            print('That was not a whole number!')
+            print('That was not a natural number!')
             
 def addition(add1, add2):
     return add1 + add2

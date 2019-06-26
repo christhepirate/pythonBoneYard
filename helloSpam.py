@@ -1,6 +1,14 @@
 #hello spam
-print('Please enter a number')
-userNum = int(input())
+while True:
+    try:
+        print('Please enter a number')
+        userNum = int(input())  
+        break
+    
+    except ValueError:
+        print('That was not a number!')
+
+
 if userNum == 2:
     print ('Howdy')
 else:

@@ -1,13 +1,26 @@
 spam = 0 #sets initial variable to 0
 while spam < 5: #conditional while statment checks value of spam
     print('Hello World.') #prints spam on 5 new lines
+    print(str(spam))
     spam = spam + 1
+ 
+
+while True:
+    try:
+        print ('Please enter a natural number less than 100: ')
+        userInputNumber = int(input())
+        while userInputNumber < 100:
+            userInputNumber = int(userInputNumber) + 1
+            print(str(userInputNumber))
+        break
+
+    except ValueError:
+        print ('Thats not a natural number!')
+
+        
+
+#while userInputNumber < 100:
     
-print('Please enter a number: ')
-userInputNumber = int(input())  
-while userInputNumber < 5:
-    userInputNumber = int(userInputNumber) + 1
-    print(str(userInputNumber))
 
 print('Please type \'up some sorcery\'.') #most effient way
 while input() != ('up some sorcery'): #no variable is necessary, the loop will continue until 'up some sorcery' is inputed.
