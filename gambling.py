@@ -3,10 +3,10 @@ import random, sys #imports the random module and the sys module
 
 #returns whatever the number puts in and will not accept bad inputs
 #startOrEnd changes the printed text depending on which number we are assigning
-def numberInput(startOrEnd):
+def numberInput(startEndGuess):
     while True:
         try:
-            print(startOrEnd)
+            print(startEndGuess)
             value = int(input())
             return value
             break
@@ -17,21 +17,25 @@ def numberInput(startOrEnd):
 #calls numberInput and places it inside startNum and endNum. also checks a valid range has been inputed
 #it was easier for me to make Num variables global than to return them            
 def defineVar():
-    global startNum, endNum, secretNumber
+    global startNum, endNum, tryNum, secretNumber
     
     startNum = numberInput('Choose a starting number...')
+
     endNum = numberInput('Choose an ending number...')
-    
     while endNum <= startNum:
         endNum = numberInput('Please choose a number larger than ' + str(startNum) + '...')
 
+    tryNum = 1 + numberInput('Please select how many tries you would like to have...')
+    while tryNum <=1:
+        tryNum = 1 + numberInput('You cannot have less than 1 try!')
+    
     secretNumber = (random.randint(startNum, endNum))
     
 def guessTicker(guessesTaken):
-    if guessesTaken == 5:
+    if guessesTaken == tryNum -2:
         print('You have only 1 guess remaining!')
     else:
-        print('You have ' + str(6-guessesTaken) + ' guesses remaining.')
+        print('You have ' + str(tryNum-1-guessesTaken) + ' guesses remaining.')
     
 
 def main():
@@ -41,11 +45,10 @@ def main():
     print('I am thinking of a number between ' + str(startNum) + ' and ' + str(endNum) + '.') 
 
     # Ask the player to guess 6 times.
-    for guessesTaken in range(1, 7):
+    for guessesTaken in range(1, tryNum):
         while True:
             try:
                 guess = int(input())
-                print('Take a guess.')
                 break
 
             except ValueError:
