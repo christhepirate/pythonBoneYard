@@ -79,6 +79,66 @@ print(spam)
 spam[0] = spam[1:4]
 print(spam)
 
+#the following will slice the end values into a None or null value
+spam[0] = None
+print(spam)
+#nothing inputed at the end here means it will start at 1 and go to the end 
+spam[1:] = None, None, None
+print(spam)
+
+#prints a slice from value 2 (note 3rd in list) to value 4
+print(spam[2:])
+
+
+
+#To actually delet stuff you need to use del
+#will delete first 2 values of spam
+del spam[:2]
+print(spam)
+
+#will delete last 2 values of spam
+del spam[2:]
+#del is the unassignment of statements
+
+spam[:4]= 'meme1', 'meme2', 'meme3', 'meme4'
+print(spam)
+
+spam[4:]= 'meme5', 'meme6', 'meme7', 'meme8'
+print(spam)
+#see the diff between
+
+bigMeme = [spam[0]]*3
+print(bigMeme)
+
+biggestMeme =[spam]*3
+print(biggestMeme)
+
+#will return each character as a sigle value in a list 
+print(list('Hello'))
+
+if 'meme1' in spam:
+    print('MEEEEEEMMMMMMEEEEEESS')
+
+if 'emem' not in spam:
+    print('aaaaaaaahhhh')
+
+#to recap
+    #A list is a value that contains multiple valiues
+    #the values in a list are also called 'items'
+    #you can access items in a list with it's integer index
+    #the indexes trat at Zero not 1
+    #you can also use negative indexes, such as -1 or -2 etc...
+    #negative indexes dont start at zero
+    #you can get multiple items from the list using a slice
+    #a slice has 2 indexes. the new lists items start at the first index and go up to (but do NOT include) the second index
+    #the len() function, concatentation (+), and replication (*) work the sam way with lists as they do with strings
+    #you can convert a value into a list by passing it to the list() function.
+
+
+
+
+
+
 
 
 

@@ -21,7 +21,7 @@ def defineVar():
     
     startNum = numberInput('Choose a starting number...')
 
-    endNum = numberInput('Choose an ending number...')
+wnding number...')
     while endNum <= startNum:
         endNum = numberInput('Please choose a number larger than ' + str(startNum) + '...')
 
