@@ -22,7 +22,7 @@ print('That last one was bacon')
 print(bacon[0])
 
 #prints 2nd value of the first list spam
-print(bacon[0] [1])
+print(bacon[0] [-1])
 
 #prints the last value of the last list in bacon
 print(bacon[-1] [-1])
@@ -43,7 +43,7 @@ print(bacon [0] [1:4])
 print(bacon [0] [:4])
 print(bacon [0] [:3])
 
-
+print('*')
 print(bacon [1] [:])
 
 
