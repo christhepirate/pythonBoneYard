@@ -1,4 +1,5 @@
 spam = int(input('please enter a number... '))
+ham = spam
 print(spam)
 spam %= 3
 print(str(spam) + ' is the modulus of the number you chose divided by 3.')
@@ -11,7 +12,7 @@ print('I own %s computers but I seldom use more than 3' %(spam))
 #%d is digits i.e 1, 2, 3
 #%s is strings
 #%f is a float
-ham = 4
+
 print('I own %s computers but I seldom use more than %s' %(spam, ham))
 #this is  a %d example
 bitches = 99

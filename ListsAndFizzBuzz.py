@@ -1,7 +1,7 @@
-numberzzz = list(range(101))
-fizz = list(range(1, 101, 3))
-buzz = list(range(1, 101, 5))
-fizzBuzz = list(range(1, 101, 15))
+numberzzz = list(range(0, 101, 1))
+fizz = list(range(0, 101, 3))
+buzz = list(range(0, 101, 5))
+fizzBuzz = list(range(0, 101, 15))
 
 
 

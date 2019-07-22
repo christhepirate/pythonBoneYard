@@ -20,8 +20,8 @@ def defineVar():
     global startNum, endNum, tryNum, secretNumber
     
     startNum = numberInput('Choose a starting number...')
-
-wnding number...')
+    endNum =numberInput('Choose an ending number...')
+    
     while endNum <= startNum:
         endNum = numberInput('Please choose a number larger than ' + str(startNum) + '...')
 
@@ -44,7 +44,7 @@ def main():
     defineVar()
     print('I am thinking of a number between ' + str(startNum) + ' and ' + str(endNum) + '.') 
 
-    # Ask the player to guess 6 times.
+    # Ask the player to guess x times.
     for guessesTaken in range(1, tryNum):
         while True:
             try:
