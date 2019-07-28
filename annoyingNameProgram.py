@@ -38,6 +38,10 @@ while True: #as long as the name variable is not 'your name' it will prompt the 
     password = input()
     if password == ('a password'):
         break
+for i in name:
+    print('**** %s ****' %i)
+
+
 
 #as long as the name variable is not 'your dog's name' it will prompt the user to enter a value for the variable 'nameDog'
 nameDog = ''

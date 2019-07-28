@@ -26,6 +26,10 @@ welcome(adventurerName)
 #Characters
     #Auntie Freon
         #Leader of Hag Coven, and 'captain?' of the bastard Ice-berg Vessel "The Shatterd Jewel"
-        #Worshiper of Sea Demon/Demi-god?
+        #Intends slaughter massive amounts of Toa and human life to achieve godhood
+        #needs to gain magical jewel to channel soals into the natural toa god death ability
+        #will also need to convince or capture enough toa and toa spawn to slaughter.
     #Vasir
         #leader of the Thieves guild on the Isle of Mikaar
+        #wants the JEwel to sell for a fortune to the highest bidder (or maybe will sell selectavly to keep the island safe)
+

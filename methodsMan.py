@@ -17,6 +17,9 @@ print('%s' %spam)
 spam.remove('YEAAAAA BUUUUUDDDY') #will remove the First instance of YEAH BUDDY
 spam.sort() #sorts spam ASCIIbetically AAAABBBBZZZZaaaabbbbzzzz
 print('%s' %spam)
+spam.sort(key=str.lower)#sorts in true alphebetical
+print('%s' %spam)
+
 
 numbers = list(range(1,11))
 for i in range(10):
