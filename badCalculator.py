@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 print('This is a calculator program that does basic math.')
 
 def numSelection():

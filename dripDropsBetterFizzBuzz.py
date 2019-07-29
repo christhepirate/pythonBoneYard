@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 
 def defineVar(): #here we define our variables and make them global
     global startNum, endNum    
