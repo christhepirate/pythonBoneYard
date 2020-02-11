@@ -2,9 +2,12 @@
 #dictionaryTime
 #a dictionarty is similar to a list in that they are a collection of values
 #in a dictionary you do not need to use a integer for your index
-import sys
+
 myCat={'size': 'THICC', 'color': 'gray', 'disposition': 'loud'}
-print('%s%s\n'%('My cat is ', myCat['size']))
+print('%s%s\n'%('M
+
+
+y cat is ', myCat['size']))
 
 #you can also use integer values as keys or values in a dictionary
 spam = {12345: 'Luggage Combo', 'The Answer': 42}
@@ -24,18 +27,28 @@ except KeyError:
 #here we a new dictionary key 'color' with a value 'red' to spam
 spam['color'] = 'red'
 
-#the for loop will itorate over each value
 
+
+
+#the for loop will itorate over each value
+print('These are the items in the Dictionary')
 for i in spam.items():
     print(i)
-    print('These are the items in the Dictionary')
 
+print('these are the values in the dictionary')
 for v in spam.values():
     print(v)
-    print('these are the values in the dictionary')
 
-
+print('These are the keys in the Dictionary')
 for k in spam.keys():
     print(k)
-    print('These are the keys in the Dictionary')
-sys.clear()
+
+#Updating our dictionaries
+spam.update({'tester':'Micheal'})
+spam.pop('The Answer')
+
+print('These are the items in the Dictionary')
+for i in spam.items():
+    print(i)
+
+

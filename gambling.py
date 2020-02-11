@@ -11,7 +11,8 @@ def numberInput(startEndGuess):
             return value
             break
 
-        except ValueError:
+        #except ValueError:
+        except:
             print ('Thats not a valid number!')
             
 #calls numberInput and places it inside startNum and endNum. also checks a valid range has been inputed
